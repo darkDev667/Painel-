@@ -2154,3 +2154,4 @@ Tab9:AddButton({"Parar Tudo", function()
     originalProperties = nil
     showNotification("Tudo Parado", "Todas as funções foram desativadas.", nil)
 end})
+})
