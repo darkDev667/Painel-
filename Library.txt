@@ -871,7 +871,7 @@ function redzlib:MakeWindow(Configs)
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "You Want Close Ui?",
+			Text = "deseja fechar o cra7zy?",
 			Options = {
 				{"Confirm", function()
 					ScreenGui:Destroy()
@@ -2102,6 +2102,7 @@ end
 end
 
 return redzlib
+
 
 
 
