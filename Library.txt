@@ -714,11 +714,13 @@ function redzlib:MakeWindow(Configs)
 	
 	local UISizeX, UISizeY = unpack(redzlib.Save.UISize)
 	local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
-		Size = UDim2.fromOffset(UISizeX, UISizeY),
-		Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
-		BackgroundTransparency = 0.03,
-		Name = "Hub"
-	}), "Main")
+    Size = UDim2.fromOffset(UISizeX, UISizeY),
+    Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
+    BackgroundTransparency = 1, -- deixe transparente se tiver fundo de imagem
+    Image = "rbxassetid://78094982005605", -- AQUI O FUNDO
+    ScaleType = Enum.ScaleType.Crop,     -- Ajusta a escala da imagem
+    Name = "Hub"
+}), "Main")
 	Make("Gradient", MainFrame, {
 		Rotation = 45
 	})MakeDrag(MainFrame)
@@ -2102,6 +2104,7 @@ end
 end
 
 return redzlib
+
 
 
 
